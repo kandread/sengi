@@ -1,0 +1,243 @@
+#+description: SENGI presentation
+#+options: timestamp:nil toc:nil num:nil reveal_width:1280 reveal_height:720
+#+reveal_theme: night
+#+reveal_root: https://cdn.jsdelivr.net/npm/reveal.js
+#+reveal_extra_css: custom.css
+#+reveal_plugins: (zoom)
+#+macro: empty
+#+macro: color @@html:<font color="$1">$2</font>@@
+#+title: Engineering for floods and droughts
+#+author: Kostas Andreadis
+#+date: Summer Engineering Institute - 14 July 2023
+* {{{empty}}}
+  :PROPERTIES:
+  :reveal_background: ./images/water.png
+  :reveal_background_trans: slide
+  :END:
+* Some facts about water
+  #+reveal_html: <div class="twocolumn"><div>
+  #+attr_html: :width 60%
+  [[file:images/water_globe.jpg]]
+  #+reveal_html: </div><div>
+  #+attr_reveal: :frag (appear)
+  - 71% of Earth's surface is water
+  - 97% of water is in oceans
+  - 3% of that water is fresh
+  - Only 1% of that is usable by humans
+  - The rest is not easily accessible (glaciers, polar ice caps etc.)
+  #+reveal_html: </div>
+** If all of Earth's water was 100 liters
+   #+reveal_html: <div class="twocolumn"><div>
+   #+attr_html: :width 80%
+   [[file:images/26gallons.png]]
+   #+reveal_html: </div><div>
+   #+reveal_html: <span class="fragment">
+   Available freshwater to humans
+   #+attr_html: :width 90%
+   [[file:images/teaspoon.png]]
+   #+reveal_html: </span>
+   #+reveal_html: </div>
+** 2 billion people lack access to safe drinking water
+   :PROPERTIES:
+   :reveal_background: https://media.npr.org/assets/img/2023/03/22/ap23081423263463_custom-1bfdb71bc8c714139e77f7a5d374fe16d93baed4-s1600-c85.webp
+   :reveal_background_trans: slide
+   :END:
+* The water cycle
+  #+attr_html: :width 100%
+  [[file:images/usgs_water_cycle.png]]
+* Water resources engineering
+  #+begin_quote
+The study and management of equipment, facilities and techniques that are used to manage and preserve life’s most valuable resource.
+#+end_quote
+** {{{empty}}}
+   :PROPERTIES:
+   :reveal_background: https://www.stanleyconsultants.com/images/default-source/markets/water-wastewater-utilites/wastewater-hero.jpg?sfvrsn=8d2ea7a9_1
+   :reveal_background_trans: slide
+   :END:
+   #+reveal_html: <section style="text-align: left; padding: 240px 0;"><span class="fragment">
+   *So many more options...*
+   #+reveal_html: </span></section>
+* About me
+  #+attr_reveal: :frag (appear)
+  - Environmental Engineering at the Technical University of Crete
+  #+reveal_html: <span class="fragment current-visible">
+  #+attr_html: :width 40%
+  [[file:images/kalathas.png]]
+  #+reveal_html: </span>
+  #+attr_reveal: :frag (appear)
+  - Civil & Environmental Engineering at the University of Washington
+  - NASA Jet Propulsion Laboratory
+  - UMass Amherst
+* Floods and droughts
+  - Droughts have an average cost of $11.2B per event
+  - Floods have an average cost of $4.6B per event
+  #+reveal_html: <div class="twocolumn"><div>
+  [[https://media.cnn.com/api/v1/images/stellar/prod/230711092956-montpelier-vermont-downtown-flooding-screengrab.jpg?c=16x9&q=h_720,w_1280,c_fill/f_webp]]
+  #+reveal_html: </div><div>
+  https://www.bibalex.org/SCIplanet/Attachments/Article/MediumImage/jvaIUlK0Rx_2018040313312613.jpg
+  #+reveal_html: </div>
+** Flood fatalities
+   [[file:images/flood_deaths.svg]]
+** Drought fatalities
+   [[file:images/drought_deaths.svg]]
+* Why it matters even more now
+  #+reveal_html: <span class="fragment">
+  [[file:images/annual-co2-emissions-per-country.svg]]
+  #+reveal_html: </span>
+** Land use change
+   [[file:images/land_use_change.webp]]
+** Population
+   [[file:images/population-with-un-projections.svg]]
+* Floods
+  #+begin_quote
+A flood is the accumulation of water over normally dry land
+#+end_quote
+#+attr_reveal: :frag (appear)
+- River flooding: overbank flow in a river
+- Coastal flooding: hurricanes, storm surge, sea level rise
+- Flash floods: Heavy rains in short period
+- Urban flooding: overwhelmed infrastructure
+* The X-year event
+  #+reveal_html: <span class="fragment"><div class="twocolumn"><div>
+  https://floodsciencecenter.org/wp-content/uploads/2020/01/FloodMag_30-yr_color_500px.png
+  #+reveal_html: </div><div>
+  https://floodsciencecenter.org/wp-content/uploads/2020/01/DepthFrequency_1200px.png
+  #+reveal_html: </div></span>
+* Changes in flood magnitude
+  #+reveal_html: <span class="fragment"><div class="twocolumn"><div>
+  [[file:images/flood_climate_a.png]]
+  #+reveal_html: </div><div>
+  [[file:images/flood_climate_b.png]]
+  #+reveal_html: </div></span>
+* Urbanizing the floodplain
+  Flood risk and urbanization from 1985 to 2015
+  [[file:images/erlac9197f3_hr.jpg]]
+* Flood mitigation
+  #+reveal_html: <div class="twocolumn"><div>
+  - Dams
+  - Diversion canals
+  - River/Coastal defenses
+  - Barriers
+  #+reveal_html: </div><div>
+  #+attr_html: :width 80%
+  [[file:images/flood_dam.jpg]]
+  #+reveal_html: </div>
+* Green infrastructure
+  #+reveal_html: <div class="twocolumn"><div>
+  [[file:images/green_infra_1.png]]
+  #+reveal_html: </div><div>
+  [[file:images/green_infra_2.png]]
+  #+reveal_html: </div>
+* Environmental justice
+  #+begin_export html
+  <div class="r-stack">
+    <img class="fragment" data-fragment-index="0" src="./images/gentrification.png" width="60%">
+    <img class="fragment" data-fragment-index="1" src="./images/jakarta.png" width="50%">
+  </div>
+  #+end_export
+* Drought
+  #+begin_quote
+Drought is a deficiency in precipitation over an extended period
+#+end_quote
+#+attr_reveal: :frag (appear)
+- Meteorological drought: lack of precipitation
+- Agricultural drought: soil water and irrigation deficits
+- Hydrological drought: water supply deficits
+- Socio-economic drought: impacts on economic goods
+* Drought impacts
+  :PROPERTIES:
+  :reveal_background: ./images/dustbowl2.jpg
+  :reveal_background_trans: slide
+  :END:
+  #+attr_reveal: :frag (appear)
+  - Food insecurity and famine
+  - Crop damages
+  - Loss of habitat
+  - Wildfire risk
+  - Income reduction and migration
+  - Flash flooding
+* Drought and climate change
+  #+attr_html: :width 75%
+  [[file:images/drought_forcings.webp]]
+* Drought resilience
+  #+attr_reveal: :frag (appear)
+  - Monitoring
+  - Preparedeness
+    - Enhance water supply
+    - Improve water demand
+    - Agricultural water management
+    - Crop production
+    - Livestock
+  - Mitigation
+  - Response and recovery
+    - Insurance
+** {{{empty}}}
+   #+attr_html: :width 60%
+   [[file:images/seeds.png]]
+* From local to global
+  #+attr_reveal: :frag (appear)
+  - Both floods and droughts have large-scale drivers and impacts
+    - Climate change
+    - Land use change
+  - Integrated landscape approach to protection and mitigation
+  - Need data!
+* Remote sensing
+  #+attr_html: :width 85%
+  [[file:images/earth_fleet.jpg]]
+** Reservoir in Montevideo
+   #+begin_export html
+   <iframe width="1000" height="1000" marginheight="0" marginwidth="0" frameBorder="0" src="./paso.html">
+     Fallback text here for unsupporting browsers, of which there are scant few.
+   </iframe>
+   #+end_export
+** {{{empty}}}
+   :PROPERTIES:
+   :reveal_background: ./images/umass_swot.png
+   :reveal_background_trans: slide
+   :END:
+** Surface Water Ocean Topography
+   #+begin_export html
+   <iframe width="1120" height=630 src="https://www.youtube.com/embed/uu9Jy9G_ZvA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+   #+end_export
+** Example imagery
+   #+attr_html: :width 100%
+   [[file:images/swot.png]]
+* Machine learning
+  :PROPERTIES:
+  :reveal_background: https://ischoolonline.berkeley.edu/wp-content/uploads/sites/37/2021/01/4430_whatismachinelearning_hero.jpg
+  :reveal_background_trans: slide
+  :END:
+** Not ChatGPT
+   #+attr_html: :width 100%
+   [[file:images/chatgpt.png]]
+   #+attr_html: :width 100%
+   [[file:images/chatgpt_lawyer.png]]
+* Data assimilation
+  #+attr_html: :width 80%
+  [[https://www.ecmwf.int/sites/default/files/4D-Var-754px_14.jpg]]
+** Data assimilation applications
+   #+reveal_html: <div class="twocolumn"><div>
+   #+attr_reveal: :frag (appear)
+   - Weather forecasting
+   - Natural hazard prediction (e.g., landslides)
+   - Environmental monitoring
+   - ...
+   #+reveal_html: </div><div><span class="fragment">
+   #+attr_html: :width 80%
+   [[https://focalpointpositioning.com/imager/insightphotos/1247/nasa-moon-landing_89da95b7ae2f8ff093c7eb4f950600c3.jpg]]
+   #+reveal_html: </span></div>
+* {{{empty}}}
+  :PROPERTIES:
+  :reveal_background: https://www.mouser.com/blog/Portals/11/Dongang_Machine%20Learning_Theme%20Image-min_1.jpg
+  :reveal_background_trans: slide
+  :reveal_background_size: 1280px
+  :END:
+** Environmental applications of deep learning
+   #+reveal_html: <span class="fragment">
+   Example of estimating river flow from weather inputs
+   #+attr_html: :width 65%
+   [[file:images/kratzert.png]]
+   #+reveal_html: </span>
+* Water is everywhere
+  #+attr_html: :width 90%
+  [[file:images/water_global.jpg]]

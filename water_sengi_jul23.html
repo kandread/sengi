@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Engineering for floods and droughts</title>
+<meta name="author" content="Kostas Andreadis"/>
+<meta name="description" content="SENGI presentation"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css"/>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/night.css" id="theme"/>
+
+<link rel="stylesheet" href="custom.css"/>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide">
+<h1 class="title">Engineering for floods and droughts</h1><h2 class="author">Kostas Andreadis</h2><h2 class="date">Summer Engineering Institute - 14 July 2023</h2>
+</section>
+<section>
+<section id="slide-org4dfe776" data-background="./images/water.png" data-background-transition="slide">
+<h2 id="org4dfe776"></h2>
+</section>
+</section>
+<section>
+<section id="slide-org8105e1d">
+<h2 id="org8105e1d">Some facts about water</h2>
+<div class="twocolumn"><div>
+
+<figure id="orgd4264b6">
+<img src="images/water_globe.jpg" alt="water_globe.jpg" width="60%">
+
+</figure>
+</div><div>
+<ul>
+<li class="fragment appear">71% of Earth's surface is water</li>
+<li class="fragment appear">97% of water is in oceans</li>
+<li class="fragment appear">3% of that water is fresh</li>
+<li class="fragment appear">Only 1% of that is usable by humans</li>
+<li class="fragment appear">The rest is not easily accessible (glaciers, polar ice caps etc.)</li>
+
+</ul>
+</div>
+</section>
+<section id="slide-orge052f55">
+<h3 id="orge052f55">If all of Earth's water was 100 liters</h3>
+<div class="twocolumn"><div>
+
+<figure id="orgab31159">
+<img src="images/26gallons.png" alt="26gallons.png" width="80%">
+
+</figure>
+</div><div>
+<span class="fragment">
+<p>
+Available freshwater to humans
+</p>
+
+<figure id="org0ae1651">
+<img src="images/teaspoon.png" alt="teaspoon.png" width="90%">
+
+</figure>
+</span>
+</div>
+</section>
+<section id="slide-org633ec04" data-background="https://media.npr.org/assets/img/2023/03/22/ap23081423263463_custom-1bfdb71bc8c714139e77f7a5d374fe16d93baed4-s1600-c85.webp" data-background-transition="slide">
+<h3 id="org633ec04">2 billion people lack access to safe drinking water</h3>
+</section>
+</section>
+<section>
+<section id="slide-org6cf037e">
+<h2 id="org6cf037e">The water cycle</h2>
+
+<figure id="org23f877c">
+<img src="images/usgs_water_cycle.png" alt="usgs_water_cycle.png" width="100%">
+
+</figure>
+</section>
+</section>
+<section>
+<section id="slide-orgd1192a3">
+<h2 id="orgd1192a3">Water resources engineering</h2>
+<blockquote>
+<p>
+The study and management of equipment, facilities and techniques that are used to manage and preserve life’s most valuable resource.
+</p>
+</blockquote>
+</section>
+<section id="slide-orgb4162d1" data-background="https://www.stanleyconsultants.com/images/default-source/markets/water-wastewater-utilites/wastewater-hero.jpg?sfvrsn=8d2ea7a9_1" data-background-transition="slide">
+<h3 id="orgb4162d1"></h3>
+<section style="text-align: left; padding: 240px 0;"><span class="fragment">
+<p>
+<b>So many more options&#x2026;</b>
+</p>
+</span></section>
+</section>
+</section>
+<section>
+<section id="slide-orge68c7fb">
+<h2 id="orge68c7fb">About me</h2>
+<ul>
+<li class="fragment appear">Environmental Engineering at the Technical University of Crete</li>
+
+</ul>
+<span class="fragment current-visible">
+
+<figure id="orgaab7bcb">
+<img src="images/kalathas.png" alt="kalathas.png" width="40%">
+
+</figure>
+</span>
+<ul>
+<li class="fragment appear">Civil &amp; Environmental Engineering at the University of Washington</li>
+<li class="fragment appear">NASA Jet Propulsion Laboratory</li>
+<li class="fragment appear">UMass Amherst</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orga1ed13d">
+<h2 id="orga1ed13d">Floods and droughts</h2>
+<ul>
+<li>Droughts have an average cost of $11.2B per event</li>
+<li>Floods have an average cost of $4.6B per event</li>
+
+</ul>
+<div class="twocolumn"><div>
+
+<figure id="orgc177aac">
+<img src="https://media.cnn.com/api/v1/images/stellar/prod/230711092956-montpelier-vermont-downtown-flooding-screengrab.jpg?c=16x9&amp;q=h_720,w_1280,c_fill/f_webp" alt="f_webp">
+
+</figure>
+</div><div>
+
+<figure id="org177d06f">
+<img src="https://www.bibalex.org/SCIplanet/Attachments/Article/MediumImage/jvaIUlK0Rx_2018040313312613.jpg" alt="jvaIUlK0Rx_2018040313312613.jpg">
+
+</figure>
+</div>
+</section>
+<section id="slide-orgfedccc3">
+<h3 id="orgfedccc3">Flood fatalities</h3>
+
+<figure id="org0ac88bc">
+<img src="images/flood_deaths.svg" alt="flood_deaths.svg" class="org-svg">
+
+</figure>
+</section>
+<section id="slide-org052a406">
+<h3 id="org052a406">Drought fatalities</h3>
+
+<figure id="orge681779">
+<img src="images/drought_deaths.svg" alt="drought_deaths.svg" class="org-svg">
+
+</figure>
+</section>
+</section>
+<section>
+<section id="slide-org9056301">
+<h2 id="org9056301">Why it matters even more now</h2>
+<span class="fragment">
+
+<figure id="orgfa961f6">
+<img src="images/annual-co2-emissions-per-country.svg" alt="annual-co2-emissions-per-country.svg" class="org-svg">
+
+</figure>
+</span>
+</section>
+<section id="slide-org8e8a960">
+<h3 id="org8e8a960">Land use change</h3>
+
+<figure id="org0679958">
+<img src="images/land_use_change.webp" alt="land_use_change.webp">
+
+</figure>
+</section>
+<section id="slide-orgb598330">
+<h3 id="orgb598330">Population</h3>
+
+<figure id="org4994752">
+<img src="images/population-with-un-projections.svg" alt="population-with-un-projections.svg" class="org-svg">
+
+</figure>
+</section>
+</section>
+<section>
+<section id="slide-org0998294">
+<h2 id="org0998294">Floods</h2>
+<blockquote>
+<p>
+A flood is the accumulation of water over normally dry land
+</p>
+</blockquote>
+<ul>
+<li class="fragment appear">River flooding: overbank flow in a river</li>
+<li class="fragment appear">Coastal flooding: hurricanes, storm surge, sea level rise</li>
+<li class="fragment appear">Flash floods: Heavy rains in short period</li>
+<li class="fragment appear">Urban flooding: overwhelmed infrastructure</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org7329b0e">
+<h2 id="org7329b0e">The X-year event</h2>
+<span class="fragment"><div class="twocolumn"><div>
+
+<figure id="orgcee5880">
+<img src="https://floodsciencecenter.org/wp-content/uploads/2020/01/FloodMag_30-yr_color_500px.png" alt="FloodMag_30-yr_color_500px.png">
+
+</figure>
+</div><div>
+
+<figure id="org1c35466">
+<img src="https://floodsciencecenter.org/wp-content/uploads/2020/01/DepthFrequency_1200px.png" alt="DepthFrequency_1200px.png">
+
+</figure>
+</div></span>
+</section>
+</section>
+<section>
+<section id="slide-org91f84eb">
+<h2 id="org91f84eb">Changes in flood magnitude</h2>
+<span class="fragment"><div class="twocolumn"><div>
+
+<figure id="org91547cf">
+<img src="images/flood_climate_a.png" alt="flood_climate_a.png">
+
+</figure>
+</div><div>
+
+<figure id="org5b308bc">
+<img src="images/flood_climate_b.png" alt="flood_climate_b.png">
+
+</figure>
+</div></span>
+</section>
+</section>
+<section>
+<section id="slide-orgeadcfb5">
+<h2 id="orgeadcfb5">Urbanizing the floodplain</h2>
+<p>
+Flood risk and urbanization from 1985 to 2015
+<img src="images/erlac9197f3_hr.jpg" alt="erlac9197f3_hr.jpg">
+</p>
+</section>
+</section>
+<section>
+<section id="slide-org3bff539">
+<h2 id="org3bff539">Flood mitigation</h2>
+<div class="twocolumn"><div>
+<ul>
+<li>Dams</li>
+<li>Diversion canals</li>
+<li>River/Coastal defenses</li>
+<li>Barriers</li>
+
+</ul>
+</div><div>
+
+<figure id="org8bd0c71">
+<img src="images/flood_dam.jpg" alt="flood_dam.jpg" width="80%">
+
+</figure>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-org749208d">
+<h2 id="org749208d">Green infrastructure</h2>
+<div class="twocolumn"><div>
+
+<figure id="org9abe922">
+<img src="images/green_infra_1.png" alt="green_infra_1.png">
+
+</figure>
+</div><div>
+
+<figure id="org54f90d8">
+<img src="images/green_infra_2.png" alt="green_infra_2.png">
+
+</figure>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-orge156a89">
+<h2 id="orge156a89">Environmental justice</h2>
+<div class="r-stack">
+  <img class="fragment" data-fragment-index="0" src="./images/gentrification.png" width="60%">
+  <img class="fragment" data-fragment-index="1" src="./images/jakarta.png" width="50%">
+</div>
+</section>
+</section>
+<section>
+<section id="slide-org9f8e4c9">
+<h2 id="org9f8e4c9">Drought</h2>
+<blockquote>
+<p>
+Drought is a deficiency in precipitation over an extended period
+</p>
+</blockquote>
+<ul>
+<li class="fragment appear">Meteorological drought: lack of precipitation</li>
+<li class="fragment appear">Agricultural drought: soil water and irrigation deficits</li>
+<li class="fragment appear">Hydrological drought: water supply deficits</li>
+<li class="fragment appear">Socio-economic drought: impacts on economic goods</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orgcff9053" data-background="./images/dustbowl2.jpg" data-background-transition="slide">
+<h2 id="orgcff9053">Drought impacts</h2>
+<ul>
+<li class="fragment appear">Food insecurity and famine</li>
+<li class="fragment appear">Crop damages</li>
+<li class="fragment appear">Loss of habitat</li>
+<li class="fragment appear">Wildfire risk</li>
+<li class="fragment appear">Income reduction and migration</li>
+<li class="fragment appear">Flash flooding</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orgcaee25e">
+<h2 id="orgcaee25e">Drought and climate change</h2>
+
+<figure id="org7e3a6f1">
+<img src="images/drought_forcings.webp" alt="drought_forcings.webp" width="75%">
+
+</figure>
+</section>
+</section>
+<section>
+<section id="slide-orga66383e">
+<h2 id="orga66383e">Drought resilience</h2>
+<ul>
+<li class="fragment appear">Monitoring</li>
+<li class="fragment appear">Preparedeness
+<ul>
+<li>Enhance water supply</li>
+<li>Improve water demand</li>
+<li>Agricultural water management</li>
+<li>Crop production</li>
+<li>Livestock</li>
+
+</ul></li>
+<li class="fragment appear">Mitigation</li>
+<li class="fragment appear">Response and recovery
+<ul>
+<li>Insurance</li>
+
+</ul></li>
+
+</ul>
+</section>
+<section id="slide-org052e9ba">
+<h3 id="org052e9ba"></h3>
+
+<figure id="org8f95bfb">
+<img src="images/seeds.png" alt="seeds.png" width="60%">
+
+</figure>
+</section>
+</section>
+<section>
+<section id="slide-orgfe61a74">
+<h2 id="orgfe61a74">From local to global</h2>
+<ul>
+<li class="fragment appear">Both floods and droughts have large-scale drivers and impacts
+<ul>
+<li>Climate change</li>
+<li>Land use change</li>
+
+</ul></li>
+<li class="fragment appear">Integrated landscape approach to protection and mitigation</li>
+<li class="fragment appear">Need data!</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org7afe965">
+<h2 id="org7afe965">Remote sensing</h2>
+
+<figure id="org1bd6b3c">
+<img src="images/earth_fleet.jpg" alt="earth_fleet.jpg" width="85%">
+
+</figure>
+</section>
+<section id="slide-org894dc8e">
+<h3 id="org894dc8e">Reservoir in Montevideo</h3>
+<iframe width="1000" height="1000" marginheight="0" marginwidth="0" frameBorder="0" src="./paso.html">
+  Fallback text here for unsupporting browsers, of which there are scant few.
+</iframe>
+</section>
+<section id="slide-org2035e5b" data-background="./images/umass_swot.png" data-background-transition="slide">
+<h3 id="org2035e5b"></h3>
+</section>
+<section id="slide-orgac95124">
+<h3 id="orgac95124">Surface Water Ocean Topography</h3>
+<iframe width="1120" height=630 src="https://www.youtube.com/embed/uu9Jy9G_ZvA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</section>
+<section id="slide-org917c56b">
+<h3 id="org917c56b">Example imagery</h3>
+
+<figure id="org5024d5d">
+<img src="images/swot.png" alt="swot.png" width="100%">
+
+</figure>
+</section>
+</section>
+<section>
+<section id="slide-orga7244ea" data-background="https://ischoolonline.berkeley.edu/wp-content/uploads/sites/37/2021/01/4430_whatismachinelearning_hero.jpg" data-background-transition="slide">
+<h2 id="orga7244ea">Machine learning</h2>
+</section>
+<section id="slide-org6479e6b">
+<h3 id="org6479e6b">Not ChatGPT</h3>
+
+<figure id="org5699cc0">
+<img src="images/chatgpt.png" alt="chatgpt.png" width="100%">
+
+</figure>
+
+<figure id="org427551a">
+<img src="images/chatgpt_lawyer.png" alt="chatgpt_lawyer.png" width="100%">
+
+</figure>
+</section>
+</section>
+<section>
+<section id="slide-org3496e4b">
+<h2 id="org3496e4b">Data assimilation</h2>
+
+<figure id="org2246d7f">
+<img src="https://www.ecmwf.int/sites/default/files/4D-Var-754px_14.jpg" alt="4D-Var-754px_14.jpg" width="80%">
+
+</figure>
+</section>
+<section id="slide-org1f56a21">
+<h3 id="org1f56a21">Data assimilation applications</h3>
+<div class="twocolumn"><div>
+<ul>
+<li class="fragment appear">Weather forecasting</li>
+<li class="fragment appear">Natural hazard prediction (e.g., landslides)</li>
+<li class="fragment appear">Environmental monitoring</li>
+<li class="fragment appear">&#x2026;</li>
+
+</ul>
+</div><div><span class="fragment">
+
+<figure id="orgc125857">
+<img src="https://focalpointpositioning.com/imager/insightphotos/1247/nasa-moon-landing_89da95b7ae2f8ff093c7eb4f950600c3.jpg" alt="nasa-moon-landing_89da95b7ae2f8ff093c7eb4f950600c3.jpg" width="80%">
+
+</figure>
+</span></div>
+</section>
+</section>
+<section>
+<section id="slide-orge693451" data-background="https://www.mouser.com/blog/Portals/11/Dongang_Machine%20Learning_Theme%20Image-min_1.jpg" data-background-size="1280px" data-background-transition="slide">
+<h2 id="orge693451"></h2>
+</section>
+<section id="slide-org2e509ba">
+<h3 id="org2e509ba">Environmental applications of deep learning</h3>
+<span class="fragment">
+<p>
+Example of estimating river flow from weather inputs
+</p>
+
+<figure id="org1634fbf">
+<img src="images/kratzert.png" alt="kratzert.png" width="65%">
+
+</figure>
+</span>
+</section>
+</section>
+<section>
+<section id="slide-orga88363e">
+<h2 id="orga88363e">Water is everywhere</h2>
+
+<figure id="org3c9189b">
+<img src="images/water_global.jpg" alt="water_global.jpg" width="90%">
+
+</figure>
+</section>
+</section>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/zoom/zoom.js"></script>
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+mouseWheel: false,
+fragmentInURL: false,
+hashOneBasedIndex: false,
+pdfSeparateFragments: true,
+overview: true,
+width: 1280,
+height: 720,
+
+transition: 'convex',
+transitionSpeed: 'default',
+
+// Plugins with reveal.js 4.x
+plugins: [ RevealZoom ],
+
+// Optional libraries used to extend reveal.js
+dependencies: [
+]
+
+});
+</script>
+</body>
+</html>
